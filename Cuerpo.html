@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EasyCode - Software Solutions</title>
+  <link rel="stylesheet" href="Style.css" />
+</head>
+<body>
+  <header>
+    <h1>EasyCode</h1>
+    <p>Soluciones de Software innovadoras</p>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#equipo">Equipo</a>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio">
+      <article class="card">
+        <h2>Bienvenidos a EasyCode</h2>
+        <p>
+          ¿Buscas soluciones digitales innovadoras para la creación de software?
+          En EasyCode ofrecemos un sistema avanzado, diseñado para generar ideas
+          creativas y eficientes. Promovemos soluciones digitales de alto impacto,
+          facilitando la creación de tu propio software con total seguridad garantizada.
+          EasyCode es una empresa ficticia que aspira a convertirse en una de tus herramientas 
+          digitales de confianza.
+        </p>
+      </article>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <article class="card">
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios web modernos y responsivos.</p>
+      </article>
+      <article class="card">
+        <h3>Aplicaciones Móviles</h3>
+        <p>Apps para Android y iOS diseñadas a medida.</p>
+      </article>
+      <article class="card">
+        <h3>Inteligencia Artificial</h3>
+        <p>Soluciones basadas en machine learning y análisis de datos.</p>
+      </article>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <article class="card">
+        <h3>TaskDev</h3>
+        <p>Un gestor de tareas pensado para programadores.</p>
+      </article>
+      <article class="card">
+        <h3>BugBuster</h3>
+        <p>Una herramienta que ayuda a encontrar y corregir errores en el código automáticamente.</p>
+      </article>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <article class="card">
+        <form>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br><br>
+
+          <label for="email">Correo electrónico:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+    </section>
+    <section id="equipo">
+      <h2>Nuestro Equipo</h2>
+      <article class="card">
+        <p><strong>Caballero Tirado Maricielo Yuriko</strong> - CEO & Desarrolladora Full Stack</p>
+        <p><strong>Torres Vélez Luis Fernando</strong> - Ingeniero de Software</p>
+        <p><strong>García Ticliahuanca Daniel</strong> - Diseñador Web</p>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 EasyCode - Todos los derechos reservados</p>
+  </footer>
+  <button id="btn-arriba" title="Volver arriba">↑</button>
+  <script>
+    const btnArriba = document.getElementById('btn-arriba');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        btnArriba.style.display = 'block';
+      } else {
+        btnArriba.style.display = 'none';
+      }
+    };
+    btnArriba.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="EasyCode - Soluciones de software innovadoras en desarrollo web,
+   aplicaciones móviles e inteligencia artificial.">
   <title>EasyCode - Software Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Style.css" />
 </head>
 <body>
@@ -11,16 +14,20 @@
     <h1>EasyCode</h1>
     <p>Soluciones de Software innovadoras</p>
     <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-      <a href="#equipo">Equipo</a>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+      </ul>
     </nav>
   </header>
+
   <main>
+    <!-- Inicio -->
     <section id="inicio">
-      <article class="card">
+      <article class="card center">
         <h2>Bienvenidos a EasyCode</h2>
         <p>
           ¿Buscas soluciones digitales innovadoras para la creación de software?
@@ -33,51 +40,89 @@
       </article>
     </section>
 
+    <!-- Servicios -->
     <section id="servicios">
-      <h2>Servicios</h2>
-      <article class="card">
-        <h3>Desarrollo Web</h3>
-        <p>Creación de sitios web modernos y responsivos.</p>
-      </article>
-      <article class="card">
-        <h3>Aplicaciones Móviles</h3>
-        <p>Apps para Android y iOS diseñadas a medida.</p>
-      </article>
-      <article class="card">
-        <h3>Inteligencia Artificial</h3>
-        <p>Soluciones basadas en machine learning y análisis de datos.</p>
-      </article>
-    </section>
+  <h2>Servicios</h2>
+  <div class="grid">
+    <article class="card">
+      <h3>Desarrollo Web</h3>
+      <p>Creación de sitios web modernos y responsivos.</p>
+    </article>
 
+    <article class="card">
+      <h3>Aplicaciones Móviles</h3>
+      <p>Apps para Android y iOS diseñadas a medida.</p>
+    </article>
+
+    <article class="card">
+      <h3>Inteligencia Artificial</h3>
+      <p>Soluciones basadas en machine learning y análisis de datos.</p>
+    </article>
+
+    <article class="card">
+      <h3>Diseño UX/UI</h3>
+      <p>Interfaces atractivas y fáciles de usar para mejorar la experiencia de usuario.</p>
+    </article>
+
+    <article class="card">
+      <h3>Seguridad Informática</h3>
+      <p>Protección de sistemas y datos con auditorías y soluciones de ciberseguridad.</p>
+    </article>
+
+    <article class="card">
+      <h3>Consultoría Tecnológica</h3>
+      <p>Asesoría en transformación digital, arquitectura de software y escalabilidad.</p>
+    </article>
+
+    <article class="card">
+      <h3>Automatización de Procesos</h3>
+      <p>Optimización de flujos de trabajo con bots y sistemas inteligentes.</p>
+    </article>
+
+    <article class="card">
+      <h3>Soporte y Mantenimiento</h3>
+      <p>Actualización, monitoreo y soporte técnico constante para tus sistemas.</p>
+    </article>
+
+    <article class="card">
+      <h3>Cloud Computing</h3>
+      <p>Servicios en la nube para almacenamiento, despliegue de aplicaciones y escalabilidad empresarial.</p>
+    </article>
+  </div>
+</section>
+    <!-- Proyectos -->
     <section id="proyectos">
       <h2>Proyectos</h2>
-      <article class="card">
-        <h3>TaskDev</h3>
-        <p>Un gestor de tareas pensado para programadores.</p>
-      </article>
-      <article class="card">
-        <h3>BugBuster</h3>
-        <p>Una herramienta que ayuda a encontrar y corregir errores en el código automáticamente.</p>
-      </article>
+      <div class="grid">
+        <article class="card">
+          <h3>TaskDev</h3>
+          <p>Un gestor de tareas pensado para programadores.</p>
+        </article>
+        <article class="card">
+          <h3>BugBuster</h3>
+          <p>Una herramienta que ayuda a encontrar y corregir errores en el código automáticamente.</p>
+        </article>
+      </div>
     </section>
-
+    <!-- Contacto -->
     <section id="contacto">
       <h2>Contacto</h2>
       <article class="card">
         <form>
           <label for="nombre">Nombre:</label><br>
-          <input type="text" id="nombre" name="nombre" required><br><br>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required><br><br>
 
           <label for="email">Correo electrónico:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
+          <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required><br><br>
 
           <label for="mensaje">Mensaje:</label><br>
-          <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje..." required></textarea><br><br>
 
           <button type="submit">Enviar</button>
         </form>
       </article>
     </section>
+    <!-- Equipo -->
     <section id="equipo">
       <h2>Nuestro Equipo</h2>
       <article class="card">
@@ -87,10 +132,15 @@
       </article>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 EasyCode - Todos los derechos reservados</p>
   </footer>
+
+  <!-- Botón subir -->
   <button id="btn-arriba" title="Volver arriba">↑</button>
+
   <script>
     const btnArriba = document.getElementById('btn-arriba');
     window.onscroll = function () {
